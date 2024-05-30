@@ -1,0 +1,22 @@
+from . import db
+
+class FinancialData(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    date = db.Column(db.Date, nullable=False)
+    total_revenue = db.Column(db.Float, nullable=False)
+    revenue_by_product = db.Column(db.String, nullable=False)
+    revenue_by_service = db.Column(db.String, nullable=False)
+    revenue_by_region = db.Column(db.String, nullable=False)
+    total_expenses = db.Column(db.Float, nullable=False)
+    operational_expenses = db.Column(db.Float, nullable=False)
+    salaries = db.Column(db.Float, nullable=False)
+    marketing_expenses = db.Column(db.Float, nullable=False)
+    rd_expenses = db.Column(db.Float, nullable=False)
+    miscellaneous_expenses = db.Column(db.Float, nullable=False)
+    gross_profit = db.Column(db.Float, nullable=False)
+    net_profit = db.Column(db.Float, nullable=False)
+    profit_margin_percentage = db.Column(db.Float, nullable=False)
+    cash_inflows = db.Column(db.Float, nullable=False)
+    cash_outflows = db.Column(db.Float, nullable=False)
+    net_cash_flow = db.Column(db.Float, nullable=False)
+    cash_flow_from_operating_activities = db.Column(db.Float, nullable=False)
